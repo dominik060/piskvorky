@@ -1,2 +1,2 @@
 # piskvorky
-Online piškvorky dělané v pythonu, flasku a qt 
+## Online piškvorky dělané v pythonu, flasku a qt 
