@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "piskvorky-server"
+version = "0.1.0"
+description = ""
+authors = ["dominik060 <dominikbartuska@gmail.com>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Flask-SQLAlchemy = "^2.5.1"
+Flask = "^2.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

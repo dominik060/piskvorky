@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameView</class>
+ <widget class="QWidget" name="GameView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>100000</width>
+    <height>100000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gameField"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Vzdát se</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>GameView</receiver>
+   <slot>giveUpClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>409</x>
+     <y>777</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>598</x>
+     <y>842</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>giveUpClicked()</slot>
+ </slots>
+</ui>
