@@ -1,10 +1,8 @@
-from signal import Signals
 from .xobox import XoBox
 from .generated import Ui_GameView
 from PySide6.QtWidgets import QWidget
 from PySide6.QtCore import Slot, Signal
 
-from client.piskvorky_client.ui import xobox
 
 class GameView(QWidget):
     """Game board"""

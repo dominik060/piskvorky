@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>520</width>
-    <height>421</height>
+    <height>452</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <x>20</x>
      <y>20</y>
      <width>481</width>
-     <height>381</height>
+     <height>429</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
@@ -31,7 +31,6 @@
          <font>
           <family>Ubuntu Condensed</family>
           <pointsize>40</pointsize>
-          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -55,6 +54,37 @@
          <size>
           <width>20</width>
           <height>100</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="addrEdit">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>localhost:5000</string>
+        </property>
+        <property name="placeholderText">
+         <string>Server adress</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>10</height>
          </size>
         </property>
        </spacer>
@@ -120,6 +150,34 @@
         </property>
        </widget>
       </item>
+      <item>
+       <spacer name="verticalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>10</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="registerButton">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Register</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
    </layout>
@@ -131,20 +189,37 @@
    <sender>loginButton</sender>
    <signal>clicked()</signal>
    <receiver>LoginDialog</receiver>
-   <slot>accept()</slot>
+   <slot>login()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>222</x>
-     <y>379</y>
+     <x>206</x>
+     <y>377</y>
     </hint>
     <hint type="destinationlabel">
-     <x>315</x>
-     <y>464</y>
+     <x>232</x>
+     <y>490</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>registerButton</sender>
+   <signal>clicked()</signal>
+   <receiver>LoginDialog</receiver>
+   <slot>register()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>394</x>
+     <y>421</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>457</x>
+     <y>481</y>
     </hint>
    </hints>
   </connection>
  </connections>
  <slots>
-  <slot>login_clicked()</slot>
+  <slot>login()</slot>
+  <slot>register()</slot>
  </slots>
 </ui>
